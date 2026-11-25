@@ -5,3 +5,4 @@ def harga_akhir(harga, diskon_persen=0):
 
 if __name__ == "__main__":
     print(harga_akhir(80000, 10))
+    print(harga_akhir(50000))
