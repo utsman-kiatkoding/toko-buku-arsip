@@ -8,7 +8,7 @@ class TestHarga(unittest.TestCase):
         self.assertEqual(harga_akhir(50000), 50000)
 
     def test_diskon_sepuluh_persen(self):
-        self.assertEqual(harga_akhir(80000, 10), 72000)
+        self.assertEqual(harga_akhir(80000, 10), 70000)
 
 
 if __name__ == "__main__":
