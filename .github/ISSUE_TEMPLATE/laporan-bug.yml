@@ -1,0 +1,33 @@
+name: Laporan bug
+description: Laporkan sesuatu yang tidak berjalan sesuai harapan
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah melapor. Isi form di bawah supaya bug mudah direproduksi.
+  - type: textarea
+    id: langkah
+    attributes:
+      label: Langkah untuk mereproduksi
+      description: Tulis langkah-langkahnya satu per satu.
+      placeholder: "1. Jalankan python3 harga.py ..."
+    validations:
+      required: true
+  - type: textarea
+    id: harapan
+    attributes:
+      label: Hasil yang diharapkan
+    validations:
+      required: true
+  - type: dropdown
+    id: prioritas
+    attributes:
+      label: Seberapa mendesak?
+      options:
+        - Rendah
+        - Sedang
+        - Tinggi
+    validations:
+      required: true
